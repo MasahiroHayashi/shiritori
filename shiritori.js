@@ -261,6 +261,8 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
 
+	//alert(rows[0].corporateKana.value);
+
 	setTimeout(function () {
 		if(rirekiWords.length > 0){
 			for (var i=0; i<rirekiWords.length; i++) {
@@ -905,9 +907,10 @@ function onSuccessQueryMy(text,str) { // 結果(JSON文字列)を配列に格納
 
 function makeWordMy(head,rows,str) { // 配列をテーブルにして出力 
 
-	rirekiWords.push(str); //履歴に追加
+	rirekiWords.push(hiraToKana(str)); //履歴に追加
 	//document.getElementById("results2").innerHTML = JSON.stringify(rirekiWords,undefined,1); 
-
+	//alert(JSON.stringify(rirekiWords,undefined,1));
+	
 	startFlag = 1;
 	resultStr += "<span class='shiri'>Shiri</span>：" + rows[0].pref.value + rows[0].city.value + "に<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>ってのがあるね。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
 	document.getElementById("results").innerHTML = resultStr; 
