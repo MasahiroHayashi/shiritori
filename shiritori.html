@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<meta name="description" content="経済産業省「法人インフォ」のSPARQL APIを使ったしりとりアプリです。" />
+<!--OGP設定-->
+<meta property="og:site_name" content="法人しりとり" />
+<meta property="og:title" content="法人しりとり" />
+<meta property="og:url" content="https://www.mirko.jp/shiritori/" />
+<meta property="og:image" content="https://www.mirko.jp/shiritori/fbimg2.jpg" />
+<meta property="og:description" content="経済産業省「法人インフォ」のSPARQL APIを使ったしりとりアプリです。" />
+<meta property="og:type" content="website" />
+<!--Twitter Card設定-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@catfishm2">
+<meta name="twitter:creator" content="@catfishm2">
+<meta name="twitter:url" content="https://www.mirko.jp/shiritori/" />
+<meta name="twitter:title" content="法人しりとり" />
+<meta name="twitter:description" content="経済産業省「法人インフォ」のSPARQL APIを使ったしりとりアプリです。">
+<meta name="twitter:image:src" content="https://www.mirko.jp/shiritori/fbimg2.jpg">
+<title>法人しりとり</title> 
+<style type="text/css">
+html {
+	word-break: break-all; /*リンクを強制改行する*/
+}
+body {
+	margin:0;
+	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	background-color: #ddd;
+	color: #000;
+}
+/********** 全体の枠のスタイル **********/
+.parent{
+	position: relative;
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+.header{
+	width: 800px;
+	height: 80px;
+	margin: auto;
+	background-color: #fdd;
+	font-size:150%;
+}
+.inner{
+	width: 800px;
+	height: 82vh;
+	line-height: 200%;
+	margin: auto;
+	margin-top:0px;
+	background-color: #fff;
+}
+.shiri{
+	color:#990066;
+}
+.anata{
+	color:#008000;
+}
+#results{
+	margin-top:10px;
+	padding:0 5px 0 5px;
+}
+
+#txt1{
+	padding:5px;
+	font-size:1.3em;
+	border:solid 1px #ccc;
+	width:700px;
+	margin-left:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	ime-mode:active;
+}
+@media only screen and (max-width:750px){ 
+	.inner {
+		width: 98%;
+	}
+	.header {
+		width: 98%;
+	}
+	#txt1{
+		width:300px;
+	}
+}
+@media only screen and (max-height:500px){ 
+	.inner {
+		height: 78vh;
+	}
+}
+</style>
+<script src="shiritori.js"></script>
+</head> 
+<body> 
+
+<div class="parent">
+  <div class="header" style="z-index: 40;"><img src="face2.png" style="width:80px;vertical-align:-30px;margin-left:20px;">　法人しりとり</div>
+  <div id="inner" class="inner" style="overflow: auto;">
+    <div id="results"></div>
+	<form name="form1" id="id_form1" action="">
+	<div  style="position: absolute; bottom: 10px; z-index: 30;"/>
+	<input type="text" id="txt1" value="" placeholder="入力フォーム（全角かな）" onkeypress="enter();">
+	<input type="text" name="dummy" style="display:none;"><!-- エンターサブミットを無効化するためのダミー -->
+	<!-- <input type="button" value="つぶやく" onclick="getMyWord()" style="display:none;"> -->
+	</div>
+	<p style="height:30px;">
+  </div>
+</div>
+
+</body> 
+</html>  
