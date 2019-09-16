@@ -650,7 +650,7 @@ function normalMessage(str) {
 	}else if(str.slice(-1) == "げ"){
 		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：げっぺい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：げそやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：げんまいちゃ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：げんこつせんべい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：げそあげ<br>" ;}
 	}else if(str.slice(-1) == "ご"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ごごくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ごまだんご<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ごこくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ごまだんご<br>" ;}
 	}else if(str.slice(-1) == "ざ"){
 		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ざーさい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ざわーくらうと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ざらめせんべい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ざるそば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ざくろ<br>" ;}
 	}else if(str.slice(-1) == "じ"){
