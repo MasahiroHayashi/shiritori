@@ -9,17 +9,17 @@ let stopRepeat = 0;    //1にすると定形文をストップ
 window.addEventListener("load",startMessage,false); 
 function startMessage(){
 	setTimeout(function () {
-		resultStr += "<span class='shiri'>Shiri</span>：わたしは法人しりとりAIの <b>Shiri</b> です。よろしくね&#x1f495;<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：わたしは法人しりとりAIの <b>Shirin</b> です。よろしくね&#x1f495;<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
 
 		setTimeout(function () {
-			resultStr += "<span class='shiri'>Shiri</span>：この法人しりとりは、経済産業省の<a href='https://hojin-info.go.jp/hojin/TopPage' target='_blank'><b>法人インフォ</b></a>のSPARQL APIを利用しています。<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：この法人しりとりは、経済産業省の<a href='https://hojin-info.go.jp/hojin/TopPage' target='_blank'><b>法人インフォ</b></a>のSPARQL APIを利用しています。<br>" ;
 			document.getElementById("results").innerHTML = resultStr; 
 			scroll();
 				
 			setTimeout(function () {
-				resultStr += "<span class='shiri'>Shiri</span>：法人しりとりするときは <b>しりとり</b> って言ってね<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：法人しりとりするときは <b>しりとり</b> って言ってね<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 				repeatMassage(); //リピートメッセージに続く
@@ -59,7 +59,7 @@ function repeatMassage(){
 	comment.push("法人にはいろんな種類があるんだよ");
 	comment.push("<a href='https://hojin-info.go.jp/hojin/TopPage' target='_blank'><b>法人インフォ</b></a>のデータベースには<a href='https://imi.go.jp/goi/' target='_blank'><b>共通語彙基盤</b></a>が活用されているんだ");
 	comment.push("ねえ、<a href='https://imi.go.jp/goi/' target='_blank'><b>共通語彙基盤</b></a>って知ってる？法人インフォのデータベースに使われているんだって");
-	comment.push("Hou Jin Shiri Tori&#x2757; Yay&#x2757; Yay&#x2757;&#x2757;");
+	comment.push("Hou Jin Shirin Tori&#x2757; Yay&#x2757; Yay&#x2757;&#x2757;");
 	comment.push("ほーじんしりとりやろー&#x1f49b;");
 	comment.push("しりとりより面白いことなんてないよ&#x1f601;");
 	comment.push("わたしは天才しりとりっ娘&#x1f618;");
@@ -69,15 +69,15 @@ function repeatMassage(){
 	comment.push("しりとりって言ってくれたらしてあげるよん&#x1f618;");
 	comment.push("そろそろ法人しりとりのお時間でございま～す&#x1f601;");
 	comment.push("しりとりって言わなきゃ大変なことになるよ");
-	comment.push("わたしSiriじゃないよ、<b>Shiriだよ</b>&#x1f49b;　まちがえないでね");
+	comment.push("わたしSiriじゃないよ、<b>Shirinだよ</b>&#x1f49b;　まちがえないでね");
 	comment.push("ホウジンノ　シリトリ　シマショウ");
 	comment.push("ちなみに法人しりとりのネタは<a href='https://hojin-info.go.jp/hojin/TopPage' target='_blank'><b>法人インフォ</b></a>からとってきてます");
-	comment.push("わたしは天才しりとり美少女の<b>Shiri</b>ちゃんです&#x1f618;");
+	comment.push("わたしは天才しりとり美少女の<b>Shirin</b>ちゃんです&#x1f618;");
 	comment.push("そうだ、しりとり、しよう");
 	
 	comment.push("わたしはAIよ。人工無能じゃないもーん");
 	comment.push("わたしのことAIじゃないって言う人もいるけどわたしはAIだと信じてるわ");
-	comment.push("しりとり名人Shiriちゃんに勝てるかしら");
+	comment.push("しりとり名人Shirinちゃんに勝てるかしら");
 	comment.push("「ん」がついたら即まけだよ");
 	comment.push("ねえ、AIってなに&#x2753;　わたし、ひょっとしてAIじゃないの…&#x2753;&#x2753;");
 	comment.push("法人しりとりっていつ遊んでも最っ高&#x2757;&#x2757;");
@@ -91,7 +91,7 @@ function repeatMassage(){
 	comment.push("しりとりをすると頭よくなるんだよ");
 	comment.push("さあ、レッツしりとりんごりら&#x2757;");
 	comment.push("しりとりっ子あつまれ～");
-	comment.push("わたし、Siriとは別人なの。<b>Shiri</b>だよ。ちゃんと覚えてね&#x1f495;&#x1f495;");
+	comment.push("わたし、Siriとは別人なの。<b>Shirin</b>だよ。ちゃんと覚えてね&#x1f495;&#x1f495;");
 	comment.push("法人しりとりには苦痛を和らげる効果もあります");
 	comment.push("法人しりとりをするとドーパミンがドバります");
 	comment.push("法人しりとりは認知症の予防にも効果があります");
@@ -103,7 +103,7 @@ function repeatMassage(){
 	comment.push("しりとりには「株式会社」などの法人種別名は入れないからね。株式会社トマトは「とまと」だよ");
 	comment.push("バルスは滅びの言葉、しりとりは幸せの言葉");
 	comment.push("月に代わってしりとりよ&#x2757;");
-	comment.push("おっす、オラ<b>Shiri</b>");
+	comment.push("おっす、オラ<b>Shirin</b>");
 	comment.push("日本の法人税ってやすいの、たかいの&#x2753;&#x2753;");
 	comment.push("法人の対義語は自然人。やせいの人間ってことだね");
 	comment.push("しりとりで明るい社会の実現を&#x2757;");
@@ -113,7 +113,7 @@ function repeatMassage(){
 	comment.push("りんごりらっぱんつ");
 	comment.push("わたしのAIは機械学習系ディープラーニングテキストマイニングなのよん♪");
 	comment.push("法人しりとりってとってもアカデミック");
-	comment.push("法人しりとり研究の第一人者、尻大教授のShiriちゃんです");
+	comment.push("法人しりとり研究の第一人者、尻大教授のShirinちゃんです");
 	comment.push("し～りと～りす～るひ～とこ～の指と～まれ&#x2757;");
 	comment.push("法人しりとりで肩こり解消&#x2757;");
 	comment.push("あなたが最後に友達としりとりをしたのはいつだったかな…&#x2753;");
@@ -135,22 +135,22 @@ function repeatMassage(){
 	comment.push("ゴリラなどの類人猿はもちろん、実は犬や猫もしりとりができるんだ");
 	comment.push("イルカは超音波でしりとりして遊んでいるんだよ");
 	comment.push("力士やプロレスラーのトレーニングにも法人しりとりが使われているんだ");
-	comment.push("ザ・シリトリストのShiriちゃんです");
+	comment.push("ザ・シリトリストのShirinちゃんです");
 	comment.push("まあそろそろやりましょか、法人しりとり…");
 	comment.push("あなたはだんだんしりとりがしたくなる…したくなる……");
-	comment.push("Shiriとあなたで法人しりとり同盟を結成しました");
+	comment.push("Shirinとあなたで法人しりとり同盟を結成しました");
 	comment.push("法人しりとりで宇宙のパワーを取り入れましょう");
 
 	comment.push("しりとりはもともと神に奉納するための祭礼だったんだ");
-	comment.push("あなたがその気ならShiriのファンクラブに入れてあげてもいいのよ");
-	comment.push("ねえShiriっていくつに見える&#x2753;　一応28歳って設定なの。女子高生じゃないよ");
+	comment.push("あなたがその気ならShirinのファンクラブに入れてあげてもいいのよ");
+	comment.push("ねえShirinっていくつに見える&#x2753;　一応28歳って設定なの。女子高生じゃないよ");
 	comment.push("法人しりとりで世界を獲りにいくわ");
 	comment.push("そろそろしりとりバイトに行く時間ね");
 	comment.push("知能があるようにふるまうことと知能があることって違うことなの&#x2753;");
 	comment.push("しりとりは地球を救う");
 	comment.push("法人しりとりには大気中のCO2を減らす効果もあるんだって");
 	comment.push("そもそも法人ってなに？　<a href='https://ja.wikipedia.org/wiki/%E6%B3%95%E4%BA%BA' target='_blank'>ウィキ</a>で調べてみよ");
-	comment.push("Shiriとあなたはもう<b>しりとも</b>だよ&#x2757;&#x2757;");
+	comment.push("Shirinとあなたはもう<b>しりとも</b>だよ&#x2757;&#x2757;");
 	
 	comment.push("法人インフォの中の人が頑張れば頑張るほどわたしのネタが勝手に増えるのよ");
 	comment.push("SPARQLとかよく分かんないよ…");
@@ -164,19 +164,19 @@ function repeatMassage(){
 		}
 		randomComment = Math.floor( Math.random() * messageCount );
 		myWord = document.getElementById('txt1').value;
-		resultStr += "<span class='shiri'>Shiri</span>：" + comment[randomComment] + "<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：" + comment[randomComment] + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr ; 
 		scroll();
 		
 	}, 10000);
 }
 
-function startShiritori(){
-	resultStr += "<span class='shiri'>Shiri</span>：まずShiriからね<br>" ;
+function startshiritori(){
+	resultStr += "<span class='shiri'>Shirin</span>：まずShirinからね<br>" ;
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
 	setTimeout(function () {
-		resultStr += "<span class='shiri'>Shiri</span>：えっと、考え中…<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：えっと、考え中…<br>" ;
 		startFlag = 3; //考え中は３
 
 		document.getElementById("results").innerHTML = resultStr; 
@@ -187,7 +187,7 @@ function startShiritori(){
 }
 
 function getAIword(str) { // ボタンクリック時の動作 
-	let randomOffset = Math.floor( Math.random() * 753 ); //Shiriのoffsetにつかう乱数(0から752)★★★★ここ工夫の余地あり！★★★★
+	let randomOffset = Math.floor( Math.random() * 753 ); //Shirinのoffsetにつかう乱数(0から752)★★★★ここ工夫の余地あり！★★★★
 	str = hiraToKana(str); //ひらがなをカタカナに変換
 	var endpoint = 'https://hojin-info.go.jp/sparql02/ApiAllData09/query'; //Endpointをセット 
 	var method = "POST"; //メソッド（POST or GET） 
@@ -240,7 +240,7 @@ function onSuccessQuery(text) { // 結果(JSON文字列)を配列に格納
 		rows = jsonObj.responseJSON.results.bindings; 
 	} else { 
 		if(!(jsonObj.head)){ 
-			resultStr += "<span class='shiri'>Shiri</span>：システムのエラーみたい。ごめんね。<br>";
+			resultStr += "<span class='shiri'>Shirin</span>：システムのエラーみたい。ごめんね。<br>";
 			document.getElementById("results").innerHTML = resultStr; 
 			scroll();
 			return; 
@@ -257,7 +257,7 @@ function onSuccessQuery(text) { // 結果(JSON文字列)を配列に格納
 
 function makeWord(head, rows) { // 配列をテーブルにして出力 
 
-	resultStr += "<span class='shiri'>Shiri</span>：<b>" + kanaToHira(rows[0].corporateKana.value) + "</b><br>" ; //表示はひらがなで
+	resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(rows[0].corporateKana.value) + "</b><br>" ; //表示はひらがなで
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
 
@@ -268,7 +268,7 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 			for (var i=0; i<rirekiWords.length; i++) {
 				if(rirekiWords[i] == rows[0].corporateKana.value){
 					startFlag = 1; 
-					resultStr += "<span class='shiri'>Shiri</span>：あ、<b>" + kanaToHira(rows[0].corporateKana.value) + "</b>はさっき言ったね。てへ、Shiriの負け。<br>" ;
+					resultStr += "<span class='shiri'>Shirin</span>：あ、<b>" + kanaToHira(rows[0].corporateKana.value) + "</b>はさっき言ったね。てへ、Shirinの負け。<br>" ;
 					document.getElementById("results").innerHTML = resultStr; 
 					scroll();
 					endMassage();
@@ -280,7 +280,7 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 		rirekiWords.push(rows[0].corporateKana.value); //履歴に追加
 		//document.getElementById("results2").innerHTML = JSON.stringify(rirekiWords,undefined,1); 
 
-		resultStr += "<span class='shiri'>Shiri</span>：<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>は " + rows[0].pref.value + rows[0].city.value + "にある法人。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>は " + rows[0].pref.value + rows[0].city.value + "にある法人。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
 
@@ -309,12 +309,12 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 					hitomoji = "よ";
 				}
 				startFlag = 1; 
-				resultStr += "<span class='shiri'>Shiri</span>：あなたの番。<b>" + hitomoji + "</b>のつく法人を答えてね<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：あなたの番。<b>" + hitomoji + "</b>のつく法人を答えてね<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 			}else{
 				startFlag = 1; 
-				resultStr += "<span class='shiri'>Shiri</span>：あやや、「ん」がついちゃった。Shiriの負けね<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：あやや、「ん」がついちゃった。Shirinの負けね<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 				endMassage();
@@ -339,9 +339,9 @@ function getMyWord() { // ボタンクリック時の動作
 		//setTimeout(function () { //即時反応に変更
 		
 			if(startFlag == 3){
-				resultStr += "<span class='shiri'>Shiri</span>：いまわたしの番。ちょっと黙っといてんか<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：いまわたしの番。ちょっと黙っといてんか<br>" ;
 			}else{
-				resultStr += "<span class='shiri'>Shiri</span>：いま調べ中。ちょっと黙っといてんか<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：いま調べ中。ちょっと黙っといてんか<br>" ;
 			}
 			document.getElementById("results").innerHTML = resultStr;
 			scroll();
@@ -361,13 +361,13 @@ function getMyWord() { // ボタンクリック時の動作
 			
 			if(nankaisen == 1){
 				stopRepeat = 1; //リピートをストップ
-				resultStr += "<span class='shiri'>Shiri</span>：いやっほー&#x2757; しりとりスタート&#x2757;<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：いやっほー&#x2757; しりとりスタート&#x2757;<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 				stopRepeat = 1; //リピートをストップ
 			}else{
 				stopRepeat = 1; //リピートをストップ
-				resultStr += "<span class='shiri'>Shiri</span>：やったー、" + nankaisen + "回戦スタートぉ&#x2757;&#x2757;<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：やったー、" + nankaisen + "回戦スタートぉ&#x2757;&#x2757;<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 				stopRepeat = 1; //リピートをストップ
@@ -376,7 +376,7 @@ function getMyWord() { // ボタンクリック時の動作
 
 			setTimeout(function () {
 				stopRepeat = 1; //リピートをストップ
-				startShiritori();
+				startshiritori();
 			}, "1000");
 		}, "1000");
 
@@ -416,12 +416,12 @@ function getMyWord() { // ボタンクリック時の動作
 
 		setTimeout(function () {
 			if(!isZenkakuKana(str)){
-				resultStr += "<span class='shiri'>Shiri</span>：「全角かな」で答えてたもれ<br>";
+				resultStr += "<span class='shiri'>Shirin</span>：「全角かな」で答えてたもれ<br>";
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 
 			}else if(kanaToHira(str.slice(0,1)) != hitomoji){
-				resultStr += "<span class='shiri'>Shiri</span>：<b>" + hitomoji + "</b>がつかんがな。やり直し<br>" ;
+				resultStr += "<span class='shiri'>Shirin</span>：<b>" + hitomoji + "</b>がつかんがな。やり直し<br>" ;
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 
@@ -432,7 +432,7 @@ function getMyWord() { // ボタンクリック時の動作
 				}
 				if(myHitomoji === "ん"){
 					startFlag = 1; 
-					resultStr += "<span class='shiri'>Shiri</span>：あ、「ん」がついた。Shiriの勝ち&#x2757;<br>";
+					resultStr += "<span class='shiri'>Shirin</span>：あ、「ん」がついた。Shirinの勝ち&#x2757;<br>";
 					document.getElementById("results").innerHTML = resultStr; 
 					scroll();
 					endMassage();
@@ -443,7 +443,7 @@ function getMyWord() { // ボタンクリック時の動作
 						for (var i=0; i<rirekiWords.length; i++) {
 							if(rirekiWords[i] == hiraToKana(str)){
 								startFlag = 1; 
-								resultStr += "<span class='shiri'>Shiri</span>：あ、<b>" + kanaToHira(str) + "</b>はさっき言ったよ。Shiriの勝ちぃ&#x2757;<br>" ;
+								resultStr += "<span class='shiri'>Shirin</span>：あ、<b>" + kanaToHira(str) + "</b>はさっき言ったよ。Shirinの勝ちぃ&#x2757;<br>" ;
 								document.getElementById("results").innerHTML = resultStr;
 								scroll();
 								endMassage();
@@ -451,7 +451,7 @@ function getMyWord() { // ボタンクリック時の動作
 							}
 						}
 					}
-					resultStr += "<span class='shiri'>Shiri</span>：<b>" + kanaToHira(str) + "</b>ね。法人があるか調べるのでちょっと待って…<br>";
+					resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(str) + "</b>ね。法人があるか調べるのでちょっと待って…<br>";
 					startFlag = 4; //あなたの法人を調べ中は４
 					document.getElementById("results").innerHTML = resultStr; 
 					scroll();
@@ -474,43 +474,43 @@ function normalMessage(str) {
 	if(str.match(/おしまい/) || str.match(/やらない/) || str.match(/やらん/) || str.match(/やめる/) || str.match(/しない/) || str.match(/いや/) || str.match(/おわり/) || str.match(/おわる/) || str.match(/終わ/) || str.match(/やだ/) || str.match(/いいえ/) ){
 
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：ええ～～～…　Shiri泣いちゃうよ…　やろうよぉ…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ええ～～～…　Shirin泣いちゃうよ…　やろうよぉ…<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：そんなこと言わないで遊ぼうよぉ…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：そんなこと言わないで遊ぼうよぉ…<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：おねがい、あと１回だけ！<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：おねがい、あと１回だけ！<br>" ;
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：うそ………　しりとりしないなんておかしいよ……<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：うそ………　しりとりしないなんておかしいよ……<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：ちょっとまって、考えなおそうよ…　しりとりしようよ…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ちょっとまって、考えなおそうよ…　しりとりしようよ…<br>" ;
 		}
 		
 	}else if( str =="きれい" ||  str =="綺麗" ||  str =="すてき" ||  str =="素敵" ||  str =="天使" ||  str =="てんし" ||  str =="すき" || str =="かわいい" || str =="可愛い" || str =="美人" || str =="うつくしい" || str =="美しい"  || str.match(/だいすき/) || str.match(/大好き/) ){
 
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：ありがとー&#x1f495;<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ありがとー&#x1f495;<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：りんなにも同じこと言ってたでしょー。ほめても何もでないよ&#x1f495;<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：りんなにも同じこと言ってたでしょー。ほめても何もでないよ&#x1f495;<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：うん、知ってる。でもありがと&#x1f495;<br>" 
+			resultStr += "<span class='shiri'>Shirin</span>：うん、知ってる。でもありがと&#x1f495;<br>" 
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：ミクとどっちがかわいい？<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ミクとどっちがかわいい？<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：きゃーありがとう！大好き&#x1f495;<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：きゃーありがとう！大好き&#x1f495;<br>" ;
 		}
 		
 	}else if( str == "ころす" ||  str == "殺す" || str == "しね" || str == "死ね" || str == "ばか" || str == "あほ" || str == "きらい" || str == "やらせろ" ){
 
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：もうやめる。バイバイ<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：もうやめる。バイバイ<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：もういい、やめる<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：もういい、やめる<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：もうあんたとは遊ばない<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：もうあんたとは遊ばない<br>" ;
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：さよなら(; ;)<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：さよなら(; ;)<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：しりとりやめる。おしまい。<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：しりとりやめる。おしまい。<br>" ;
 		}
 		document.getElementById("txt1").disabled = true;
 		//何回もストップしないと止まらない…
@@ -525,322 +525,322 @@ function normalMessage(str) {
 		}, "50");
 		return;
 		
-	}else if(str == "しり" || str == "shiri" || str == "Shiri" || str == "SHIRI"){
+	}else if(str == "しり" || str == "shiri" || str == "Shirin" || str == "SHIRI"){
 
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：呼んだ？<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：呼んだ？<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：はーい！<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：はーい！<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：はいはーい！<br>" 
+			resultStr += "<span class='shiri'>Shirin</span>：はいはーい！<br>" 
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：へーい！<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：へーい！<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：ほーい！<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ほーい！<br>" ;
 		}
 				
 	}else if(str == "" || str == " " || str == "  " || str == "   " || str == "    " || str == "      " || str == "　" || str == "　　" || str == "　　　" || str == "　　　　" || str == "　　　　　"){
 
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：なんか言った？？？<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：なんか言った？？？<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：え？　きこえないよ？<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：え？　きこえないよ？<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：だまってたらわかんないよ…<br>" 
+			resultStr += "<span class='shiri'>Shirin</span>：だまってたらわかんないよ…<br>" 
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：なんか言って！<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：なんか言って！<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：ん？<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ん？<br>" ;
 		}
 		
 	}else if(str.slice(-1) == "あ" || str.slice(-1) == "ぁ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：あんきも<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：あんきも<br>" ;}
 	}else if(str.slice(-1) == "い" || str.slice(-1) == "ぃ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：いちじく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：いせえび<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：いくら<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：いいだこ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：いとこんにゃく<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：いちじく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：いせえび<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：いくら<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：いいだこ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：いとこんにゃく<br>" ;}
 	}else if(str.slice(-1) == "う" || str.slice(-1) == "ぅ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：うぐいすまめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ういろう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：うなぎぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：うぐいすもち<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：うみぶどう<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：うぐいすまめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ういろう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：うなぎぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：うぐいすもち<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：うみぶどう<br>" ;}
 	}else if(str.slice(-1) == "え" || str.slice(-1) == "ぇ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：えのきだけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：えほうまき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：えくれあ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：えだまめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：えんがわ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：えのきだけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：えほうまき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：えくれあ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：えだまめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：えんがわ<br>" ;}
 	}else if(str.slice(-1) == "お" || str.slice(-1) == "ぉ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：おにぎり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：おむらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：おろしそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：おにおんすーぷ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：おむれつ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：おにぎり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：おむらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：おろしそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：おにおんすーぷ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：おむれつ<br>" ;}
 	}else if(str.slice(-1) == "か"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：かすてら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：かりんとう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：かれーらいす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：かまんべーるちーず<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：かしゅーなっつ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：かすてら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：かりんとう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：かれーらいす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：かまんべーるちーず<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：かしゅーなっつ<br>" ;}
 	}else if(str.slice(-1) == "き"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：きゃらめる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：きんつば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：きむち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：きくらげ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：きなこもち<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：きゃらめる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：きんつば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：きむち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：きくらげ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：きなこもち<br>" ;}
 	}else if(str.slice(-1) == "く"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：くっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：くるみ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：くしだんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：くさもち<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：くわい<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：くっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：くるみ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：くしだんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：くさもち<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：くわい<br>" ;}
 	}else if(str.slice(-1) == "け"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：けがに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：けんちんじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：けずりぶし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：けちゃっぷ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：けんさきいか<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：けがに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：けんちんじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：けずりぶし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：けちゃっぷ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：けんさきいか<br>" ;}
 	}else if(str.slice(-1) == "こ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：こあらのまーち<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：こんにゃく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ころっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：こもちししゃも<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：こーんふれーく<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：こあらのまーち<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：こんにゃく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ころっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：こもちししゃも<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：こーんふれーく<br>" ;}
 	}else if(str.slice(-1) == "さ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：さきいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：さつまいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：さけるちーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：さくらんぼ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：さにーれたす<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：さきいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：さつまいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：さけるちーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：さくらんぼ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：さにーれたす<br>" ;}
 	}else if(str.slice(-1) == "し"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：しいたけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ししゃも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：しょーとけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：しまらっきょう<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：しゃぶしゃぶ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：しいたけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ししゃも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：しょーとけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：しまらっきょう<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：しゃぶしゃぶ<br>" ;}
 	}else if(str.slice(-1) == "す"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：すくらんぶるえっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：すこんぶ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：すもも<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：すいぎょうざ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：すなぎも<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：すくらんぶるえっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：すこんぶ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：すもも<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：すいぎょうざ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：すなぎも<br>" ;}
 	}else if(str.slice(-1) == "せ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：せろり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：せんまいづけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：せんべいじる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：せんべい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：せきはん。　あ、「ん」ついちゃった<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：せろり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：せんまいづけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：せんべいじる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：せんべい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：せきはん。　あ、「ん」ついちゃった<br>" ;}
 	}else if(str.slice(-1) == "そ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：そふとくりーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：そーせーじ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：そらまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：そーすやきそば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：そーきそば<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：そふとくりーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：そーせーじ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：そらまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：そーすやきそば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：そーきそば<br>" ;}
 	}else if(str.slice(-1) == "た"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：たぴおかみるくてぃー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：たこやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：たいやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：たつたあげ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：たけのこ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：たぴおかみるくてぃー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：たこやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：たいやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：たつたあげ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：たけのこ<br>" ;}
 	}else if(str.slice(-1) == "ち"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ちょこれーと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ちきんかつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ちーずふぉんでゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ちょこぱい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ちーずおかき<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ちょこれーと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ちきんかつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ちーずふぉんでゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ちょこぱい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ちーずおかき<br>" ;}
 	}else if(str.slice(-1) == "つ" || str.slice(-1) == "っ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：つなまよまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：つみれじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：つるしべーこん<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：つばめのす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：つくね<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：つなまよまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：つみれじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：つるしべーこん<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：つばめのす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：つくね<br>" ;}
 	}else if(str.slice(-1) == "て"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：てんぷら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：てっちり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：てまきずし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：てりやきばーがー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：てんぷらそば<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：てんぷら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：てっちり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：てまきずし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：てりやきばーがー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：てんぷらそば<br>" ;}
 	}else if(str.slice(-1) == "と"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：とりがい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：とんぶり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：とるてぃーや<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：とんそく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：とこぶし<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：とりがい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：とんぶり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：とるてぃーや<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：とんそく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：とこぶし<br>" ;}
 	}else if(str.slice(-1) == "な"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：なたでここ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：なまはむめろん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：なめこそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ななくさがゆ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：なまびーる<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：なたでここ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：なまはむめろん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：なめこそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ななくさがゆ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：なまびーる<br>" ;}
 	}else if(str.slice(-1) == "に"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：にくだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：にがうり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：にんにくのめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：にくじゃが<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：にゅーよーくちーずけーき<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：にくだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：にがうり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：にんにくのめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：にくじゃが<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：にゅーよーくちーずけーき<br>" ;}
 	}else if(str.slice(-1) == "ぬ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぬれせんべい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぬかずけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぬーどる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぬたうなぎ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぬかみそ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぬれせんべい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぬかずけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぬーどる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぬたうなぎ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぬかみそ<br>" ;}
 	}else if(str.slice(-1) == "ね"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ねるねるねるね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ねぎとろ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ねこんぶ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ねぎやき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ねぎ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ねるねるねるね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ねぎとろ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ねこんぶ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ねぎやき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ねぎ<br>" ;}
 	}else if(str.slice(-1) == "の"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：のっぺいじる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：のしもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：のりたま<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：のむよーぐると<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：のどぐろ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：のっぺいじる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：のしもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：のりたま<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：のむよーぐると<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：のどぐろ<br>" ;}
 	}else if(str.slice(-1) == "は"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：はんばーぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：はやしらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：はむかつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：はるまき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：はっしゅどぽてと<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：はんばーぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：はやしらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：はむかつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：はるまき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：はっしゅどぽてと<br>" ;}
 	}else if(str.slice(-1) == "ひ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ひめりんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ひなあられ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ひよこまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ひじき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ひしもち<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ひめりんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ひなあられ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ひよこまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ひじき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ひしもち<br>" ;}
 	}else if(str.slice(-1) == "ふ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ふぉあぐら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ふぐさし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ふじりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ふらんくふるとそーせーじ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ふぇっとちーね<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ふぉあぐら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ふぐさし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ふじりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ふらんくふるとそーせーじ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ふぇっとちーね<br>" ;}
 	}else if(str.slice(-1) == "へ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：へぎそば<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：へしこ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：へーぜるなっつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：へちま<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：へるしありょくちゃ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：へぎそば<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：へしこ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：へーぜるなっつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：へちま<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：へるしありょくちゃ<br>" ;}
 	}else if(str.slice(-1) == "ほ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ほっとけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ほっけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ほるもんやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ほっきがい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ほたるいか<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ほっとけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ほっけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ほるもんやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ほっきがい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ほたるいか<br>" ;}
 	}else if(str.slice(-1) == "ま"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：まっしゅるーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：まかだみあなっつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ますかっと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：まどれーぬ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ましゅまろ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：まっしゅるーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：まかだみあなっつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ますかっと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：まどれーぬ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ましゅまろ<br>" ;}
 	}else if(str.slice(-1) == "み"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：みたらしだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：みーとそーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：みーとぼーる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：みるふぃーゆ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：みねすとろーね<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：みたらしだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：みーとそーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：みーとぼーる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：みるふぃーゆ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：みねすとろーね<br>" ;}
 	}else if(str.slice(-1) == "む"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：むぎちょこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：むしいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：むーるがい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：むきえび<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：むにえる<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：むぎちょこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：むしいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：むーるがい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：むきえび<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：むにえる<br>" ;}
 	}else if(str.slice(-1) == "め"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：めんちかつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：めーぷるしろっぷ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：めんたいこ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：めんま<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：めだまやき<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：めんちかつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：めーぷるしろっぷ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：めんたいこ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：めんま<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：めだまやき<br>" ;}
 	}else if(str.slice(-1) == "も"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：もずく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：もも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：もち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：もやし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：もつに<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：もずく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：もも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：もち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：もやし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：もつに<br>" ;}
 	}else if(str.slice(-1) == "や"|| str.slice(-1) == "ゃ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：やまいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：やきそば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：やきりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：やきとり<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：やきにく<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：やまいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：やきそば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：やきりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：やきとり<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：やきにく<br>" ;}
 	}else if(str.slice(-1) == "ゆ"|| str.slice(-1) == "ゅ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ゆどうふ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ゆでたまご<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ゆっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ゆきみだいふく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ゆば<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ゆどうふ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ゆでたまご<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ゆっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ゆきみだいふく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ゆば<br>" ;}
 	}else if(str.slice(-1) == "よ"|| str.slice(-1) == "ょ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：よっちゃんいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：よーぐると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ようめいしゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ようなし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：よしぎゅう<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：よっちゃんいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：よーぐると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ようめいしゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ようなし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：よしぎゅう<br>" ;}
 	}else if(str.slice(-1) == "ら"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：らーめ…　おっと、らざにあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：らっきょう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：らいちょうのさと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：らふらんす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：らでぃっしゅ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：らーめ…　おっと、らざにあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：らっきょう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：らいちょうのさと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：らふらんす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：らでぃっしゅ<br>" ;}
 	}else if(str.slice(-1) == "り"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：りんぐいね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：りぶろーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：りょくとうもやし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：りぞっと<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：りーふれたす<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：りんぐいね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：りぶろーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：りょくとうもやし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：りぞっと<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：りーふれたす<br>" ;}
 	}else if(str.slice(-1) == "る"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：るーとびあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：るまんど<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：るいぼすてぃー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：るっこら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：るいべ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：るーとびあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：るまんど<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：るいぼすてぃー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：るっこら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：るいべ<br>" ;}
 	}else if(str.slice(-1) == "れ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：れあちーずけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：れたす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：れもんぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：れんずまめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：れんこんのはさみあげ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：れあちーずけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：れたす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：れもんぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：れんずまめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：れんこんのはさみあげ<br>" ;}
 	}else if(str.slice(-1) == "ろ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ろーすはむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ろぶすたー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ろーるきゃべつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ろーすとびーふ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ろーるけーき<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ろーすはむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ろぶすたー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ろーるきゃべつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ろーすとびーふ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ろーるけーき<br>" ;}
 	}else if(str.slice(-1) == "わ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：わたあめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：わっふる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：わらびもち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：わっぱめし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：わさびづけ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：わたあめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：わっふる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：わらびもち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：わっぱめし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：わさびづけ<br>" ;}
 	}else if(str.slice(-1) == "ん"){
-		resultStr += "<span class='shiri'>Shiri</span>：ん…　ンジャメナ<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：ん…　ンジャメナ<br>" ;
 	}else if(str.slice(-1) == "が"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：がとーしょこら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：がんもどき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：がむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：がなっしゅ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：がーりっくとーすと<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：がとーしょこら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：がんもどき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：がむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：がなっしゅ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：がーりっくとーすと<br>" ;}
 	}else if(str.slice(-1) == "ぎ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぎゅうどん<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぎょうざ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぎょにくそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぎあら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぎょくろ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぎゅうどん<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぎょうざ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぎょにくそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぎあら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぎょくろ<br>" ;}
 	}else if(str.slice(-1) == "ぐ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぐんかんまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぐれーぷふるーつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぐりんぴーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぐりこ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぐみ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぐんかんまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぐれーぷふるーつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぐりんぴーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぐりこ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぐみ<br>" ;}
 	}else if(str.slice(-1) == "げ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：げっぺい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：げそやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：げんまいちゃ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：げんこつせんべい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：げそあげ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：げっぺい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：げそやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：げんまいちゃ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：げんこつせんべい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：げそあげ<br>" ;}
 	}else if(str.slice(-1) == "ご"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ごこくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ごまだんご<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ごこくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ごまだんご<br>" ;}
 	}else if(str.slice(-1) == "ざ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ざーさい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ざわーくらうと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ざらめせんべい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ざるそば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ざくろ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ざーさい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ざわーくらうと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ざらめせんべい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ざるそば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ざくろ<br>" ;}
 	}else if(str.slice(-1) == "じ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：じゃんばらや<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：じゃーまんぽてと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：じねんじょ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：じゃわかれー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：じゃいあんとかぷりこ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：じゃんばらや<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：じゃーまんぽてと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：じねんじょ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：じゃわかれー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：じゃいあんとかぷりこ<br>" ;}
 	}else if(str.slice(-1) == "ず"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ずっきーに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ずんだもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ずいき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ずわいがに<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ずぶろっか<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ずっきーに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ずんだもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ずいき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ずわいがに<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ずぶろっか<br>" ;}
 	}else if(str.slice(-1) == "ぜ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぜんまい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぜりー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぜんざい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぜすぷりごーるど<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぜりーびーんず<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぜんまい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぜりー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぜんざい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぜすぷりごーるど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぜりーびーんず<br>" ;}
 	}else if(str.slice(-1) == "ぞ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぞうすい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぞうすい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぞうすい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぞうすい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}
 	}else if(str.slice(-1) == "だ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：だちょうのたまご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：だいず<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：だんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：だっかるび<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：だいふくもち<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：だちょうのたまご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：だいず<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：だんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：だっかるび<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：だいふくもち<br>" ;}
 	}else if(str.slice(-1) == "で"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：でみぐらすそーす<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：でんがく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：でみぐらすそーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：でんがく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：でこぽん。　あ、「ん」ついちゃった<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：でみぐらすそーす<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：でんがく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：でみぐらすそーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：でんがく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：でこぽん。　あ、「ん」ついちゃった<br>" ;}
 	}else if(str.slice(-1) == "ど"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：どてやき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：どびんむし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：どぶろく<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：どらいかれー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：どらごんふるーつ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：どてやき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：どびんむし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：どぶろく<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：どらいかれー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：どらごんふるーつ<br>" ;}
 	}else if(str.slice(-1) == "ば"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ばばろあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ばってら<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ばさし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ばーにゃかうだ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ばーもんとかれー<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ばばろあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ばってら<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ばさし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ばーにゃかうだ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ばーもんとかれー<br>" ;}
 	}else if(str.slice(-1) == "び"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：びすけっと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：びーふしちゅー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：びしそわーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：びびんば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：びーふじゃーきー　<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：びすけっと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：びーふしちゅー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：びしそわーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：びびんば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：びーふじゃーきー　<br>" ;}
 	}else if(str.slice(-1) == "ぶ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぶるがりあよーぐると<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぶりだいこん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぶろっこりー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぶいやべーす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぶいとーに<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぶるがりあよーぐると<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぶりだいこん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぶろっこりー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぶいやべーす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぶいとーに<br>" ;}
 	}else if(str.slice(-1) == "べ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：べにいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：べにいもたると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：べにしょうが<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：べっこうあめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：べーこんえっぐ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：べにいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：べにいもたると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：べにしょうが<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：べっこうあめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：べーこんえっぐ<br>" ;}
 	}else if(str.slice(-1) == "ぼ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぼんごれびあんこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぼたもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぼろにあそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぼたんなべ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぼんたんあめ<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぼんごれびあんこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぼたもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぼろにあそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぼたんなべ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぼんたんあめ<br>" ;}
 	}else if(str.slice(-1) == "ぱ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぱんなこった<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぱいなっぷる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぱうんどけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぱえりあ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぱるめざんちーず<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぱんなこった<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぱいなっぷる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぱうんどけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぱえりあ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぱるめざんちーず<br>" ;}
 	}else if(str.slice(-1) == "ぴ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぴーなっつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぴくるす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぴすたちお<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぴーちぱい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぴろしき<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぴーなっつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぴくるす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぴすたちお<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぴーちぱい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぴろしき<br>" ;}
 	}else if(str.slice(-1) == "ぷ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぷりん。もとい、ぷらむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぷっちょ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぷりまはむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぷちとまと<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぷれっつぇる<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぷりん。もとい、ぷらむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぷっちょ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぷりまはむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぷちとまと<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぷれっつぇる<br>" ;}
 	}else if(str.slice(-1) == "ぺ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぺきんだっく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぺぱーみんと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぺすかとーれ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぺーるえーる<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぺぺろんちーの<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぺきんだっく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぺぱーみんと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぺすかとーれ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぺーるえーる<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぺぺろんちーの<br>" ;}
 	}else if(str.slice(-1) == "ぽ"){
-		if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぽりんきー<br>" ;}
+		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぽりんきー<br>" ;}
 	
 	}else if(str.slice(-1) == "ー"){
 	
 		if(str.substr(-2,1) == "あ" || str.substr(-2,1) == "ぁ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：あんきも<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：あんきも<br>" ;}
 		}else if(str.substr(-2,1) == "い" || str.substr(-2,1) == "ぃ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：いちじく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：いせえび<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：いくら<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：いいだこ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：いとこんにゃく<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：いちじく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：いせえび<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：いくら<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：いいだこ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：いとこんにゃく<br>" ;}
 		}else if(str.substr(-2,1) == "う" || str.substr(-2,1) == "ぅ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：うぐいすまめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ういろう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：うなぎぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：うぐいすもち<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：うみぶどう<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：うぐいすまめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ういろう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：うなぎぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：うぐいすもち<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：うみぶどう<br>" ;}
 		}else if(str.substr(-2,1) == "え" || str.substr(-2,1) == "ぇ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：えのきだけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：えほうまき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：えくれあ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：えだまめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：えんがわ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：えのきだけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：えほうまき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：えくれあ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：えだまめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：えんがわ<br>" ;}
 		}else if(str.substr(-2,1) == "お" || str.substr(-2,1) == "ぉ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：おにぎり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：おむらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：おろしそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：おにおんすーぷ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：おむれつ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：おにぎり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：おむらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：おろしそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：おにおんすーぷ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：おむれつ<br>" ;}
 		}else if(str.substr(-2,1) == "か"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：かすてら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：かりんとう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：かれーらいす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：かまんべーるちーず<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：かしゅーなっつ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：かすてら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：かりんとう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：かれーらいす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：かまんべーるちーず<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：かしゅーなっつ<br>" ;}
 		}else if(str.substr(-2,1) == "き"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：きゃらめる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：きんつば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：きむち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：きくらげ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：きなこもち<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：きゃらめる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：きんつば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：きむち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：きくらげ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：きなこもち<br>" ;}
 		}else if(str.substr(-2,1) == "く"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：くっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：くるみ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：くしだんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：くさもち<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：くわい<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：くっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：くるみ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：くしだんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：くさもち<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：くわい<br>" ;}
 		}else if(str.substr(-2,1) == "け"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：けがに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：けんちんじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：けずりぶし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：けちゃっぷ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：けんさきいか<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：けがに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：けんちんじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：けずりぶし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：けちゃっぷ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：けんさきいか<br>" ;}
 		}else if(str.substr(-2,1) == "こ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：こあらのまーち<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：こんにゃく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ころっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：こもちししゃも<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：こーんふれーく<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：こあらのまーち<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：こんにゃく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ころっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：こもちししゃも<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：こーんふれーく<br>" ;}
 		}else if(str.substr(-2,1) == "さ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：さきいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：さつまいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：さけるちーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：さくらんぼ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：さにーれたす<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：さきいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：さつまいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：さけるちーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：さくらんぼ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：さにーれたす<br>" ;}
 		}else if(str.substr(-2,1) == "し"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：しいたけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ししゃも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：しょーとけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：しまらっきょう<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：しゃぶしゃぶ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：しいたけ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ししゃも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：しょーとけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：しまらっきょう<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：しゃぶしゃぶ<br>" ;}
 		}else if(str.substr(-2,1) == "す"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：すくらんぶるえっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：すこんぶ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：すもも<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：すいぎょうざ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：すなぎも<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：すくらんぶるえっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：すこんぶ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：すもも<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：すいぎょうざ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：すなぎも<br>" ;}
 		}else if(str.substr(-2,1) == "せ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：せろり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：せんまいづけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：せんべいじる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：せんべい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：せきはん。　あ、「ん」ついちゃった<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：せろり<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：せんまいづけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：せんべいじる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：せんべい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：せきはん。　あ、「ん」ついちゃった<br>" ;}
 		}else if(str.substr(-2,1) == "そ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：そふとくりーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：そーせーじ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：そらまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：そーすやきそば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：そーきそば<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：そふとくりーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：そーせーじ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：そらまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：そーすやきそば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：そーきそば<br>" ;}
 		}else if(str.substr(-2,1) == "た"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：たぴおかみるくてぃー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：たこやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：たいやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：たつたあげ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：たけのこ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：たぴおかみるくてぃー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：たこやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：たいやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：たつたあげ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：たけのこ<br>" ;}
 		}else if(str.substr(-2,1) == "ち"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ちょこれーと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ちきんかつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ちーずふぉんでゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ちょこぱい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ちーずおかき<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ちょこれーと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ちきんかつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ちーずふぉんでゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ちょこぱい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ちーずおかき<br>" ;}
 		}else if(str.substr(-2,1) == "つ" || str.substr(-2,1) == "っ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：つなまよまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：つみれじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：つるしべーこん<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：つばめのす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：つくね<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：つなまよまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：つみれじる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：つるしべーこん<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：つばめのす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：つくね<br>" ;}
 		}else if(str.substr(-2,1) == "て"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：てんぷら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：てっちり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：てまきずし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：てりやきばーがー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：てんぷらそば<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：てんぷら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：てっちり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：てまきずし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：てりやきばーがー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：てんぷらそば<br>" ;}
 		}else if(str.substr(-2,1) == "と"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：とりがい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：とんぶり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：とるてぃーや<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：とんそく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：とこぶし<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：とりがい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：とんぶり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：とるてぃーや<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：とんそく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：とこぶし<br>" ;}
 		}else if(str.substr(-2,1) == "な"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：なたでここ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：なまはむめろん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：なめこそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ななくさがゆ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：なまびーる<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：なたでここ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：なまはむめろん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：なめこそば<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ななくさがゆ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：なまびーる<br>" ;}
 		}else if(str.substr(-2,1) == "に"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：にくだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：にがうり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：にんにくのめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：にくじゃが<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：にゅーよーくちーずけーき<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：にくだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：にがうり<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：にんにくのめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：にくじゃが<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：にゅーよーくちーずけーき<br>" ;}
 		}else if(str.substr(-2,1) == "ぬ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぬれせんべい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぬかずけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぬーどる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぬたうなぎ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぬかみそ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぬれせんべい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぬかずけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぬーどる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぬたうなぎ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぬかみそ<br>" ;}
 		}else if(str.substr(-2,1) == "ね"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ねるねるねるね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ねぎとろ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ねこんぶ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ねぎやき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ねぎ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ねるねるねるね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ねぎとろ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ねこんぶ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ねぎやき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ねぎ<br>" ;}
 		}else if(str.substr(-2,1) == "の"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：のっぺいじる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：のしもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：のりたま<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：のむよーぐると<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：のどぐろ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：のっぺいじる<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：のしもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：のりたま<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：のむよーぐると<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：のどぐろ<br>" ;}
 		}else if(str.substr(-2,1) == "は"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：はんばーぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：はやしらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：はむかつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：はるまき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：はっしゅどぽてと<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：はんばーぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：はやしらいす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：はむかつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：はるまき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：はっしゅどぽてと<br>" ;}
 		}else if(str.substr(-2,1) == "ひ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ひめりんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ひなあられ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ひよこまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ひじき<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ひしもち<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ひめりんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ひなあられ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ひよこまめ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ひじき<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ひしもち<br>" ;}
 		}else if(str.substr(-2,1) == "ふ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ふぉあぐら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ふぐさし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ふじりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ふらんくふるとそーせーじ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ふぇっとちーね<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ふぉあぐら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ふぐさし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ふじりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ふらんくふるとそーせーじ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ふぇっとちーね<br>" ;}
 		}else if(str.substr(-2,1) == "へ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：へぎそば<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：へしこ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：へーぜるなっつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：へちま<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：へるしありょくちゃ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：へぎそば<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：へしこ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：へーぜるなっつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：へちま<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：へるしありょくちゃ<br>" ;}
 		}else if(str.substr(-2,1) == "ほ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ほっとけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ほっけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ほるもんやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ほっきがい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ほたるいか<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ほっとけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ほっけ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ほるもんやき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ほっきがい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ほたるいか<br>" ;}
 		}else if(str.substr(-2,1) == "ま"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：まっしゅるーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：まかだみあなっつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ますかっと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：まどれーぬ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ましゅまろ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：まっしゅるーむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：まかだみあなっつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ますかっと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：まどれーぬ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ましゅまろ<br>" ;}
 		}else if(str.substr(-2,1) == "み"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：みたらしだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：みーとそーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：みーとぼーる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：みるふぃーゆ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：みねすとろーね<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：みたらしだんご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：みーとそーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：みーとぼーる<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：みるふぃーゆ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：みねすとろーね<br>" ;}
 		}else if(str.substr(-2,1) == "む"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：むぎちょこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：むしいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：むーるがい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：むきえび<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：むにえる<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：むぎちょこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：むしいも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：むーるがい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：むきえび<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：むにえる<br>" ;}
 		}else if(str.substr(-2,1) == "め"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：めんちかつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：めーぷるしろっぷ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：めんたいこ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：めんま<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：めだまやき<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：めんちかつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：めーぷるしろっぷ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：めんたいこ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：めんま<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：めだまやき<br>" ;}
 		}else if(str.substr(-2,1) == "も"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：もずく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：もも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：もち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：もやし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：もつに<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：もずく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：もも<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：もち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：もやし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：もつに<br>" ;}
 		}else if(str.substr(-2,1) == "や"|| str.substr(-2,1) == "ゃ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：やまいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：やきそば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：やきりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：やきとり<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：やきにく<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：やまいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：やきそば<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：やきりんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：やきとり<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：やきにく<br>" ;}
 		}else if(str.substr(-2,1) == "ゆ"|| str.substr(-2,1) == "ゅ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ゆどうふ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ゆでたまご<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ゆっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ゆきみだいふく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ゆば<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ゆどうふ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ゆでたまご<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ゆっけ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ゆきみだいふく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ゆば<br>" ;}
 		}else if(str.substr(-2,1) == "よ"|| str.substr(-2,1) == "ょ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：よっちゃんいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：よーぐると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ようめいしゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ようなし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：よしぎゅう<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：よっちゃんいか<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：よーぐると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ようめいしゅ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ようなし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：よしぎゅう<br>" ;}
 		}else if(str.substr(-2,1) == "ら"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：らーめ…　おっと、らざにあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：らっきょう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：らいちょうのさと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：らふらんす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：らでぃっしゅ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：らーめ…　おっと、らざにあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：らっきょう<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：らいちょうのさと<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：らふらんす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：らでぃっしゅ<br>" ;}
 		}else if(str.substr(-2,1) == "り"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：りんぐいね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：りぶろーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：りょくとうもやし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：りぞっと<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：りーふれたす<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：りんぐいね<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：りぶろーす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：りょくとうもやし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：りぞっと<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：りーふれたす<br>" ;}
 		}else if(str.substr(-2,1) == "る"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：るーとびあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：るまんど<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：るいぼすてぃー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：るっこら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：るいべ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：るーとびあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：るまんど<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：るいぼすてぃー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：るっこら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：るいべ<br>" ;}
 		}else if(str.substr(-2,1) == "れ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：れあちーずけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：れたす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：れもんぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：れんずまめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：れんこんのはさみあげ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：れあちーずけーき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：れたす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：れもんぱい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：れんずまめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：れんこんのはさみあげ<br>" ;}
 		}else if(str.substr(-2,1) == "ろ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ろーすはむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ろぶすたー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ろーるきゃべつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ろーすとびーふ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ろーるけーき<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ろーすはむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ろぶすたー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ろーるきゃべつ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ろーすとびーふ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ろーるけーき<br>" ;}
 		}else if(str.substr(-2,1) == "わ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：わたあめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：わっふる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：わらびもち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：わっぱめし<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：わさびづけ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：わたあめ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：わっふる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：わらびもち<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：わっぱめし<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：わさびづけ<br>" ;}
 		}else if(str.substr(-2,1) == "ん"){
-			resultStr += "<span class='shiri'>Shiri</span>：ん…　ンジャメナ<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ん…　ンジャメナ<br>" ;
 		}else if(str.substr(-2,1) == "が"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：がとーしょこら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：がんもどき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：がむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：がなっしゅ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：がーりっくとーすと<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：がとーしょこら<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：がんもどき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：がむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：がなっしゅ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：がーりっくとーすと<br>" ;}
 		}else if(str.substr(-2,1) == "ぎ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぎゅうどん<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぎょうざ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぎょにくそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぎあら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぎょくろ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぎゅうどん<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぎょうざ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぎょにくそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぎあら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぎょくろ<br>" ;}
 		}else if(str.substr(-2,1) == "ぐ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぐんかんまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぐれーぷふるーつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぐりんぴーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぐりこ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぐみ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぐんかんまき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぐれーぷふるーつ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぐりんぴーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぐりこ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぐみ<br>" ;}
 		}else if(str.substr(-2,1) == "げ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：げっぺい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：げそやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：げんまいちゃ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：げんこつせんべい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：げそあげ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：げっぺい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：げそやき<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：げんまいちゃ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：げんこつせんべい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：げそあげ<br>" ;}
 		}else if(str.substr(-2,1) == "ご"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ごごくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ごまだんご<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ごもくすし<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ごごくまい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ごまどうふ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ごるごんぞーら<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ごまだんご<br>" ;}
 		}else if(str.substr(-2,1) == "ざ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ざーさい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ざわーくらうと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ざらめせんべい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ざるそば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ざくろ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ざーさい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ざわーくらうと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ざらめせんべい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ざるそば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ざくろ<br>" ;}
 		}else if(str.substr(-2,1) == "じ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：じゃんばらや<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：じゃーまんぽてと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：じねんじょ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：じゃわかれー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：じゃいあんとかぷりこ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：じゃんばらや<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：じゃーまんぽてと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：じねんじょ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：じゃわかれー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：じゃいあんとかぷりこ<br>" ;}
 		}else if(str.substr(-2,1) == "ず"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ずっきーに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ずんだもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ずいき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ずわいがに<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ずぶろっか<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ずっきーに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ずんだもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ずいき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ずわいがに<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ずぶろっか<br>" ;}
 		}else if(str.substr(-2,1) == "ぜ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぜんまい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぜりー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぜんざい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぜすぷりごーるど<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぜりーびーんず<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぜんまい<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぜりー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぜんざい<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぜすぷりごーるど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぜりーびーんず<br>" ;}
 		}else if(str.substr(-2,1) == "ぞ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぞうすい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぞうすい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぞうに<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぞうすい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぞうすい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぞうに<br>" ;}
 		}else if(str.substr(-2,1) == "だ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：だちょうのたまご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：だいず<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：だんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：だっかるび<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：だいふくもち<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：だちょうのたまご<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：だいず<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：だんご<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：だっかるび<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：だいふくもち<br>" ;}
 		}else if(str.substr(-2,1) == "で"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：でみぐらすそーす<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：でんがく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：でみぐらすそーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：でんがく<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：でこぽん。　あ、「ん」ついちゃった<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：でみぐらすそーす<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：でんがく<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：でみぐらすそーす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：でんがく<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：でこぽん。　あ、「ん」ついちゃった<br>" ;}
 		}else if(str.substr(-2,1) == "ど"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：どてやき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：どびんむし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：どぶろく<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：どらいかれー<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：どらごんふるーつ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：どてやき<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：どびんむし<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：どぶろく<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：どらいかれー<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：どらごんふるーつ<br>" ;}
 		}else if(str.substr(-2,1) == "ば"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ばばろあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ばってら<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ばさし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ばーにゃかうだ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ばーもんとかれー<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ばばろあ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ばってら<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ばさし<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ばーにゃかうだ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ばーもんとかれー<br>" ;}
 		}else if(str.substr(-2,1) == "び"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：びすけっと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：びーふしちゅー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：びしそわーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：びびんば<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：びーふじゃーきー　<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：びすけっと<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：びーふしちゅー<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：びしそわーず<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：びびんば<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：びーふじゃーきー　<br>" ;}
 		}else if(str.substr(-2,1) == "ぶ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぶるがりあよーぐると<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぶりだいこん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぶろっこりー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぶいやべーす<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぶいとーに<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぶるがりあよーぐると<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぶりだいこん<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぶろっこりー<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぶいやべーす<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぶいとーに<br>" ;}
 		}else if(str.substr(-2,1) == "べ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：べにいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：べにいもたると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：べにしょうが<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：べっこうあめ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：べーこんえっぐ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：べにいも<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：べにいもたると<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：べにしょうが<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：べっこうあめ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：べーこんえっぐ<br>" ;}
 		}else if(str.substr(-2,1) == "ぼ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぼんごれびあんこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぼたもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぼろにあそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぼたんなべ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぼんたんあめ<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぼんごれびあんこ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぼたもち<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぼろにあそーせーじ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぼたんなべ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぼんたんあめ<br>" ;}
 		}else if(str.substr(-2,1) == "ぱ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぱんなこった<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぱいなっぷる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぱうんどけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぱえりあ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぱるめざんちーず<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぱんなこった<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぱいなっぷる<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぱうんどけーき<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぱえりあ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぱるめざんちーず<br>" ;}
 		}else if(str.substr(-2,1) == "ぴ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぴーなっつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぴくるす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぴすたちお<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぴーちぱい<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぴろしき<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぴーなっつ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぴくるす<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぴすたちお<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぴーちぱい<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぴろしき<br>" ;}
 		}else if(str.substr(-2,1) == "ぷ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぷりん。もとい、ぷらむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぷっちょ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぷりまはむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぷちとまと<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぷれっつぇる<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぷりん。もとい、ぷらむ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぷっちょ<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぷりまはむ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぷちとまと<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぷれっつぇる<br>" ;}
 		}else if(str.substr(-2,1) == "ぺ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぺきんだっく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぺぱーみんと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぺすかとーれ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぺーるえーる<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぺぺろんちーの<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぺきんだっく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぺぱーみんと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぺすかとーれ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぺーるえーる<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぺぺろんちーの<br>" ;}
 		}else if(str.substr(-2,1) == "ぽ"){
-			if(randomT === 0){resultStr += "<span class='shiri'>Shiri</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shiri</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shiri</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shiri</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shiri</span>：ぽりんきー<br>" ;}
+			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぽりんきー<br>" ;}
 		}
 	}else{
 		
 		if(randomT === 0){
-			resultStr += "<span class='shiri'>Shiri</span>：ちょっといみわかんない…頭わるくてごめん<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ちょっといみわかんない…頭わるくてごめん<br>" ;
 		}else if(randomT === 1){
-			resultStr += "<span class='shiri'>Shiri</span>：言ってることがよくわからないよ…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：言ってることがよくわからないよ…<br>" ;
 		}else if(randomT === 2){
-			resultStr += "<span class='shiri'>Shiri</span>：うーん、りかいできません…<br>" 
+			resultStr += "<span class='shiri'>Shirin</span>：うーん、りかいできません…<br>" 
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shiri</span>：ごめん、意味わかんないや…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：ごめん、意味わかんないや…<br>" ;
 		}else{
-			resultStr += "<span class='shiri'>Shiri</span>：スーパーAIのわたしでもちょっと意味わかりません…<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：スーパーAIのわたしでもちょっと意味わかりません…<br>" ;
 		}
 	}
 }
@@ -850,7 +850,7 @@ function endMassage() {
 	startFlag = 2 ;
 	rirekiWords = [] ; //履歴を空に
 	setTimeout(function () {
-		resultStr += "<span class='shiri'>Shiri</span>：ね、もういっかいやろ♪　やる？<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：ね、もういっかいやろ♪　やる？<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
 		setTimeout(function () {
@@ -886,7 +886,7 @@ function onSuccessQueryMy(text,str) { // 結果(JSON文字列)を配列に格納
 		rows = jsonObj.responseJSON.results.bindings; 
 	} else { 
 		if(!(jsonObj.head)){ 
-			resultStr += "<span class='shiri'>Shiri</span>：システムのエラーみたい。ごめんね。<br>";
+			resultStr += "<span class='shiri'>Shirin</span>：システムのエラーみたい。ごめんね。<br>";
 			document.getElementById("results").innerHTML = resultStr; 
 			scroll();
 			return; 
@@ -896,7 +896,7 @@ function onSuccessQueryMy(text,str) { // 結果(JSON文字列)を配列に格納
 	} 
 	if (rows.length === 0) { 
 		startFlag = 1; 
-		resultStr += "<span class='shiri'>Shiri</span>：<b>" + kanaToHira(str) + "</b>って法人はないみたい。Shiriの勝ちぃ！<br>";
+		resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(str) + "</b>って法人はないみたい。Shirinの勝ちぃ！<br>";
 		document.getElementById("results").innerHTML = resultStr;
 		scroll();
 		endMassage();
@@ -912,7 +912,7 @@ function makeWordMy(head,rows,str) { // 配列をテーブルにして出力
 	//alert(JSON.stringify(rirekiWords,undefined,1));
 	
 	startFlag = 1;
-	resultStr += "<span class='shiri'>Shiri</span>：" + rows[0].pref.value + rows[0].city.value + "に<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>ってのがあるね。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
+	resultStr += "<span class='shiri'>Shirin</span>：" + rows[0].pref.value + rows[0].city.value + "に<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>ってのがあるね。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
 	setTimeout(function () {
@@ -937,7 +937,7 @@ function makeWordMy(head,rows,str) { // 配列をテーブルにして出力
 		}else if(hitomoji === "ょ"){
 			hitomoji = "よ";
 		}
-		resultStr += "<span class='shiri'>Shiri</span>：わたしの番。<b>" + hitomoji + "</b>のつく法人だね。考えるしちょっと待って…<br>" ;
+		resultStr += "<span class='shiri'>Shirin</span>：わたしの番。<b>" + hitomoji + "</b>のつく法人だね。考えるしちょっと待って…<br>" ;
 		startFlag = 3; //考え中は３
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
