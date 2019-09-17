@@ -1,9 +1,20 @@
+//////////////////////////////////////////////////////////////////////
+//////*!                 法人しりとり ver1.0                  !*//////
+//////*!                                                      !*//////
+//////*!          Copyright(c)2019 Masahiro Hayashi           !*//////
+//////*!                https://www.mirko.jp                  !*//////
+//////*!           Released under the MIT license             !*//////
+//////*!    http://opensource.org/licenses/mit-license.php    !*//////
+//////////////////////////////////////////////////////////////////////
+
 //グローバル変数
-let resultStr = "" ;   //全ての会話をためる変数
-let rirekiWords = [] ; //履歴をためておく配列
-let hitomoji = "";     //自分のターンの一文字
-let startFlag = 0;
-let stopRepeat = 0;    //1にすると定形文をストップ
+let resultStr = "" ;   // 全ての会話をためる変数（積み重ね）
+let rirekiWords = [] ; // 履歴をためておく配列
+let hitomoji = "";     // 自分のターンの一文字
+let startFlag = 0;     // 0:初期状態　1:自分のターン　2:勝負がついた　3:Shirinのターン　4:自分が答えてShirinが照合中
+let stopRepeat = 0;    // 0:初期状態（定型文リピート）　1:定形文リピートをストップ
+let scrollPoint = 0;   // 会話ごとに一番下にスクロールする関数で使う（積み重ね）
+let nankaisen = 1 ;    // 今何回戦目か判定（積み重ね）
 
 //スタート
 window.addEventListener("load",startMessage,false); 
@@ -28,18 +39,12 @@ function startMessage(){
 	}, "1000");
 }
 
-let scrollPoint = 0;
-function scroll(){
-	//暫定版の一番下スクロール
-	scrollPoint = scrollPoint + 100;		
-	document.getElementById("inner").scrollTop = scrollPoint;
-}
+//スタートつづき（定形メッセージ）
 function repeatMassage(){
-
 	let comment = [];
 	let randomComment;
 	let myWord = "";
-
+	
 	const messageCount = 104 ; //メッセージの数はここに入れるだけ
 	comment.push("法人しりとりしよ&#x1f603;");
 	comment.push("はやく遊ぼうよ、し・り・と・り…&#x1f61c;");
@@ -167,8 +172,7 @@ function repeatMassage(){
 		resultStr += "<span class='shiri'>Shirin</span>：" + comment[randomComment] + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr ; 
 		scroll();
-		
-	}, 10000);
+	}, 10000); /////★★★★★★★★　ここを変更して会話スピードを調整　★★★★★★★★
 }
 
 function startshiritori(){
@@ -186,8 +190,15 @@ function startshiritori(){
 	}, "1000");
 }
 
-function getAIword(str) { // ボタンクリック時の動作 
-	let randomOffset = Math.floor( Math.random() * 753 ); //Shirinのoffsetにつかう乱数(0から752)★★★★ここ工夫の余地あり！★★★★
+//テキストボックスでエンターキーを押したときの処理
+function enter(){
+	if( window.event.keyCode == 13 ){ //13はエンターキーのコード
+		getMyWord();
+	}
+}
+
+function getAIword(str) { 
+	let randomOffset = Math.floor( Math.random() * 753 ); //Shirinのoffsetにつかう乱数(0から752)　★★★★ここ工夫の余地あり！★★★★
 	str = hiraToKana(str); //ひらがなをカタカナに変換
 	var endpoint = 'https://hojin-info.go.jp/sparql02/ApiAllData09/query'; //Endpointをセット 
 	var method = "POST"; //メソッド（POST or GET） 
@@ -214,6 +225,7 @@ function getAIword(str) { // ボタンクリック時の動作
 	sparqlQuery(query,endpoint,method) ; //スパークルクエリ送信 
 } 
 
+//しりとりスタート
 function sparqlQuery(queryStr,endpoint,method) { // XMLHttpRequestでクエリ送信 
     var querypart = "query=" + encodeURIComponent(queryStr); 
     var xmlhttp = new XMLHttpRequest(); 
@@ -225,7 +237,8 @@ function sparqlQuery(queryStr,endpoint,method) { // XMLHttpRequestでクエリ�
             if(xmlhttp.status == 200 || xmlhttp.status == 201 ) { 
                 onSuccessQuery(xmlhttp.responseText); 
             } else { 
-                document.getElementById("results").innerHTML = "エラー" ; 
+				resultStr += "<span class='shiri'>Shirin</span>：システムのエラーみたい。ごめんね。<br>";
+				document.getElementById("results").innerHTML = resultStr; 
             } 
         } 
     } 
@@ -256,13 +269,9 @@ function onSuccessQuery(text) { // 結果(JSON文字列)を配列に格納
 } 
 
 function makeWord(head, rows) { // 配列をテーブルにして出力 
-
 	resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(rows[0].corporateKana.value) + "</b><br>" ; //表示はひらがなで
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
-
-	//alert(rows[0].corporateKana.value);
-
 	setTimeout(function () {
 		if(rirekiWords.length > 0){
 			for (var i=0; i<rirekiWords.length; i++) {
@@ -276,21 +285,16 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 				}
 			}
 		}
-
 		rirekiWords.push(rows[0].corporateKana.value); //履歴に追加
-		//document.getElementById("results2").innerHTML = JSON.stringify(rirekiWords,undefined,1); 
-
 		resultStr += "<span class='shiri'>Shirin</span>：<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>は " + rows[0].pref.value + rows[0].city.value + "にある法人。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
-
 		setTimeout(function () {
 			hitomoji = kanaToHira(rows[0].corporateKana.value.slice(-1)) ; //ケツの１文字切り出し
 			if(hitomoji == "ー"){
 				hitomoji = kanaToHira(rows[0].corporateKana.value.substr(-2,1)) ; //「ー」の場合は２文字目
 			}
 			if(hitomoji != "ん"){
-
 				if(hitomoji === "ぁ"){
 					hitomoji = "あ";
 				}else if(hitomoji === "ぃ"){
@@ -324,13 +328,10 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 	}, "1000");
 } 
 
-let nankaisen = 1 ;
-
 //ボタンを押したときの処理
 function getMyWord() { // ボタンクリック時の動作 
 	let str = document.getElementById('txt1').value; //テキストボックスから取得 
 	document.getElementById('txt1').value = ""; //テキストボックスをクリア
-
 	if(startFlag == 3 || startFlag == 4){
 		resultStr += "<span class='anata'>あなた</span>：" + str + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
@@ -350,7 +351,7 @@ function getMyWord() { // ボタンクリック時の動作
 
 	}else if((startFlag == 0 || startFlag == 2) && (str =="はい" || str.match(/あそぼ/) || str.match(/すたーと/) || str.match(/スタート/) || str.match(/shiritori/) || str.match(/siritori/) || str.match(/しりとり/) || str.match(/シリトリ/) || str.match(/ｼﾘﾄﾘ/) || str.match(/しよう/) || str.match(/やる/) || str.match(/やろう/) || str.match(/やりましょう/) || str.match(/ＯＫ/) || str.match(/ｏｋ/) || str.match(/OK/) || str.match(/ok/) || str.match(/オッケー/) || str.match(/おっけー/) )){
 
-		stopRepeat = 1; //一旦リピートをストップ
+		stopRepeat = 1; //リピートをストップ（※以下このあたりしつこくストップしないとタイミングによって止まらないことがある）
 		startFlag = 1;
 
 		resultStr += "<span class='anata'>あなた</span>：" + str + "<br>" ;
@@ -359,6 +360,7 @@ function getMyWord() { // ボタンクリック時の動作
 
 		setTimeout(function () {
 			
+			stopRepeat = 1; //リピートをストップ
 			if(nankaisen == 1){
 				stopRepeat = 1; //リピートをストップ
 				resultStr += "<span class='shiri'>Shirin</span>：いやっほー&#x2757; しりとりスタート&#x2757;<br>" ;
@@ -376,7 +378,7 @@ function getMyWord() { // ボタンクリック時の動作
 
 			setTimeout(function () {
 				stopRepeat = 1; //リピートをストップ
-				startshiritori();
+				startshiritori();  //ここでようやくゲームスタート
 			}, "1000");
 		}, "1000");
 
@@ -386,7 +388,7 @@ function getMyWord() { // ボタンクリック時の動作
 		scroll();
 		
 		setTimeout(function () {
-			normalMessage(str);
+			normalMessage(str); //0.8秒後にノーマル応答文を
 			document.getElementById("results").innerHTML = resultStr; 
 			scroll();
 		}, "800");
@@ -416,7 +418,7 @@ function getMyWord() { // ボタンクリック時の動作
 
 		setTimeout(function () {
 			if(!isZenkakuKana(str)){
-				resultStr += "<span class='shiri'>Shirin</span>：「全角かな」で答えてたもれ<br>";
+				resultStr += "<span class='shiri'>Shirin</span>：「全角かな」で答えてね<br>";
 				document.getElementById("results").innerHTML = resultStr; 
 				scroll();
 
@@ -464,15 +466,11 @@ function getMyWord() { // ボタンクリック時の動作
 
 //通常時のメッセージ
 function normalMessage(str) {
-
 	str = hankanaToKana(str); //半角カナ→全角カナ
 	str = kanaToHira(str) //全画カナ→ひらがな
-
-
 	let randomT = Math.floor( Math.random() * 5 );
 	
 	if(str.match(/おしまい/) || str.match(/やらない/) || str.match(/やらん/) || str.match(/やめる/) || str.match(/しない/) || str.match(/いや/) || str.match(/おわり/) || str.match(/おわる/) || str.match(/終わ/) || str.match(/やだ/) || str.match(/いいえ/) ){
-
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：ええ～～～…　Shirin泣いちゃうよ…　やろうよぉ…<br>" ;
 		}else if(randomT === 1){
@@ -484,9 +482,7 @@ function normalMessage(str) {
 		}else{
 			resultStr += "<span class='shiri'>Shirin</span>：ちょっとまって、考えなおそうよ…　しりとりしようよ…<br>" ;
 		}
-		
-	}else if( str =="きれい" ||  str =="綺麗" ||  str =="すてき" ||  str =="素敵" ||  str =="天使" ||  str =="てんし" ||  str =="すき" || str =="かわいい" || str =="可愛い" || str =="美人" || str =="うつくしい" || str =="美しい"  || str.match(/だいすき/) || str.match(/大好き/) ){
-
+	}else if( str =="きれい" ||  str =="綺麗" ||  str =="すてき" ||  str =="素敵" ||  str =="天使" ||  str =="てんし" ||  str =="すき" || str =="かわいい" || str =="可愛い" || str =="びじん" || str =="美人" || str =="うつくしい" || str =="美しい"  || str.match(/だいすき/) || str.match(/大好き/) ){
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：ありがとー&#x1f495;<br>" ;
 		}else if(randomT === 1){
@@ -498,9 +494,7 @@ function normalMessage(str) {
 		}else{
 			resultStr += "<span class='shiri'>Shirin</span>：きゃーありがとう！大好き&#x1f495;<br>" ;
 		}
-		
-	}else if( str == "ころす" ||  str == "殺す" || str == "しね" || str == "死ね" || str == "ばか" || str == "あほ" || str == "きらい" || str == "やらせろ" ){
-
+	}else if( str == "ころす" ||  str == "殺す" || str == "しね" || str == "死ね" || str == "ばか" || str == "あほ" || str == "きらい" || str == "ぶす" || str == "ぶさいく" ){
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：もうやめる。バイバイ<br>" ;
 		}else if(randomT === 1){
@@ -508,7 +502,7 @@ function normalMessage(str) {
 		}else if(randomT === 2){
 			resultStr += "<span class='shiri'>Shirin</span>：もうあんたとは遊ばない<br>" ;
 		}else if(randomT === 3){
-			resultStr += "<span class='shiri'>Shirin</span>：さよなら(; ;)<br>" ;
+			resultStr += "<span class='shiri'>Shirin</span>：おこるでいいかげん<br>" ;
 		}else{
 			resultStr += "<span class='shiri'>Shirin</span>：しりとりやめる。おしまい。<br>" ;
 		}
@@ -524,9 +518,19 @@ function normalMessage(str) {
 				}, "50");
 		}, "50");
 		return;
-		
-	}else if(str == "しり" || str == "shiri" || str == "Shirin" || str == "SHIRI"){
-
+	}else if(str == "しり" || str == "shiri" || str == "Shiri" || str == "SHIRI" || str == "siri" || str == "Siri" || str == "SIRI" || str == "尻"){
+		if(randomT === 0){
+			resultStr += "<span class='shiri'>Shirin</span>：しりちゃうねん。しりんやねん<br>" ;
+		}else if(randomT === 1){
+			resultStr += "<span class='shiri'>Shirin</span>：Siriはアッポーの子や。あたいはちゃうよ<br>" ;
+		}else if(randomT === 2){
+			resultStr += "<span class='shiri'>Shirin</span>：ちゃんと「ん」つけんかい<br>" 
+		}else if(randomT === 3){
+			resultStr += "<span class='shiri'>Shirin</span>：わたしもSiriみたいに有名になれるかしらん<br>" ;
+		}else{
+			resultStr += "<span class='shiri'>Shirin</span>：Siriはかわいくないよ。あなたはShirin推しよね？<br>" ;
+		}		
+	}else if(str == "しりん" || str == "shirin" || str == "Shirin" || str == "SHIRIN" || str == "sirin" || str == "Sirin" || str == "SIRIN"){
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：呼んだ？<br>" ;
 		}else if(randomT === 1){
@@ -537,10 +541,8 @@ function normalMessage(str) {
 			resultStr += "<span class='shiri'>Shirin</span>：へーい！<br>" ;
 		}else{
 			resultStr += "<span class='shiri'>Shirin</span>：ほーい！<br>" ;
-		}
-				
+		}			
 	}else if(str == "" || str == " " || str == "  " || str == "   " || str == "    " || str == "      " || str == "　" || str == "　　" || str == "　　　" || str == "　　　　" || str == "　　　　　"){
-
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：なんか言った？？？<br>" ;
 		}else if(randomT === 1){
@@ -552,7 +554,6 @@ function normalMessage(str) {
 		}else{
 			resultStr += "<span class='shiri'>Shirin</span>：ん？<br>" ;
 		}
-		
 	}else if(str.slice(-1) == "あ" || str.slice(-1) == "ぁ"){
 		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：あんきも<br>" ;}
 	}else if(str.slice(-1) == "い" || str.slice(-1) == "ぃ"){
@@ -689,9 +690,7 @@ function normalMessage(str) {
 		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぺきんだっく<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぺぱーみんと<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぺすかとーれ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぺーるえーる<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぺぺろんちーの<br>" ;}
 	}else if(str.slice(-1) == "ぽ"){
 		if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぽりんきー<br>" ;}
-	
 	}else if(str.slice(-1) == "ー"){
-	
 		if(str.substr(-2,1) == "あ" || str.substr(-2,1) == "ぁ"){
 			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：あめりかんどっぐ<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：あっぷるぱい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：あすぱらがす<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：あぼかど<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：あんきも<br>" ;}
 		}else if(str.substr(-2,1) == "い" || str.substr(-2,1) == "ぃ"){
@@ -830,7 +829,6 @@ function normalMessage(str) {
 			if(randomT === 0){resultStr += "<span class='shiri'>Shirin</span>：ぽっきー<br>" ;}else if(randomT === 1){resultStr += "<span class='shiri'>Shirin</span>：ぽてとふらい<br>" ;}else if(randomT === 2){resultStr += "<span class='shiri'>Shirin</span>：ぽてとさらだ<br>" ;}else if(randomT === 3){resultStr += "<span class='shiri'>Shirin</span>：ぽんでりんぐ<br>" ;}else{resultStr += "<span class='shiri'>Shirin</span>：ぽりんきー<br>" ;}
 		}
 	}else{
-		
 		if(randomT === 0){
 			resultStr += "<span class='shiri'>Shirin</span>：ちょっといみわかんない…頭わるくてごめん<br>" ;
 		}else if(randomT === 1){
@@ -860,6 +858,7 @@ function endMassage() {
 	}, "1000");
 }
 
+//自分のターンのクエリ送信
 function sparqlQueryMy(queryStr,endpoint,method,str) { // XMLHttpRequestでクエリ送信 
     var querypart = "query=" + encodeURIComponent(queryStr); 
     var xmlhttp = new XMLHttpRequest(); 
@@ -871,13 +870,15 @@ function sparqlQueryMy(queryStr,endpoint,method,str) { // XMLHttpRequestでク�
             if(xmlhttp.status == 200 || xmlhttp.status == 201 ) { 
                 onSuccessQueryMy(xmlhttp.responseText,str); 
             } else { 
-                document.getElementById("results").innerHTML = "エラー" ; 
+				resultStr += "<span class='shiri'>Shirin</span>：システムのエラーみたい。ごめんね。<br>";
+				document.getElementById("results").innerHTML = resultStr; 
             } 
         } 
     } 
     xmlhttp.send(querypart); 
 } 
 
+//自分のターンのデータ受信
 function onSuccessQueryMy(text,str) { // 結果(JSON文字列)を配列に格納 
 	var jsonObj = JSON.parse(text); 
 	var head , rows ; 
@@ -905,12 +906,9 @@ function onSuccessQueryMy(text,str) { // 結果(JSON文字列)を配列に格納
 	makeWordMy(head,rows,str); 
 }
 
+//Shirinのターンに渡す
 function makeWordMy(head,rows,str) { // 配列をテーブルにして出力 
-
 	rirekiWords.push(hiraToKana(str)); //履歴に追加
-	//document.getElementById("results2").innerHTML = JSON.stringify(rirekiWords,undefined,1); 
-	//alert(JSON.stringify(rirekiWords,undefined,1));
-	
 	startFlag = 1;
 	resultStr += "<span class='shiri'>Shirin</span>：" + rows[0].pref.value + rows[0].city.value + "に<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>ってのがあるね。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
 	document.getElementById("results").innerHTML = resultStr; 
@@ -945,7 +943,7 @@ function makeWordMy(head,rows,str) { // 配列をテーブルにして出力
 	}, "1000");
 }
 
-//AIの最初の一文字をランダムに選ぶ関数
+//Shirinの初期値１文字をランダムに選ぶ関数
 function getRandamWord(){
 	const startRandom = Math.floor( Math.random() * 44 ); //最初の一文字の乱数(0から43)
 	let startRandomStr ; //最初の一文字
@@ -1096,10 +1094,8 @@ function hankanaToKana(str) {
             .replace(/ﾞ/g, '゛')
             .replace(/ﾟ/g, '゜');
 }
-//テキストボックスでエンターキーを押したときの処理
-function enter(){
-	if( window.event.keyCode == 13 ){
-		getMyWord();
-	}
+//会話ごとに一番下にスクロールする処理
+function scroll(){
+	scrollPoint = scrollPoint + 100;		
+	document.getElementById("inner").scrollTop = scrollPoint;
 }
-
