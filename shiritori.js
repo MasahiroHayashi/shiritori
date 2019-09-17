@@ -190,16 +190,22 @@ function startshiritori(){
 	}, "1000");
 }
 
-//テキストボックスでエンターキーを押したときの処理
-function enter(){
-	if( window.event.keyCode == 13 ){ //13はエンターキーのコード
-		getMyWord();
-	}
-}
-
 function getAIword(str) { 
-	let randomOffset = Math.floor( Math.random() * 753 ); //Shirinのoffsetにつかう乱数(0から752)　★★★★ここ工夫の余地あり！★★★★
+
 	str = hiraToKana(str); //ひらがなをカタカナに変換
+	
+	//★★★★★★★★★★★★　ここ工夫の余地あり！！！　★★★★★★★★★★★★
+	//ヌ：763件　ヂ：37件　ヅ：12件
+	//レスポンスのスピードとランダム具合を考慮した結果、オフセットは「0～299」のランダムとする
+	let randomOffset;
+	if(str === "ヂ"){
+		randomOffset = Math.floor( Math.random() * 37 ); //Shirinのoffsetにつかう乱数
+	}else if(str === "ヅ"){
+		randomOffset = Math.floor( Math.random() * 12 ); 
+	}else{
+		randomOffset = Math.floor( Math.random() * 300 ); 
+	}
+	
 	var endpoint = 'https://hojin-info.go.jp/sparql02/ApiAllData09/query'; //Endpointをセット 
 	var method = "POST"; //メソッド（POST or GET） 
 	var query =  "PREFIX  hj: <http://hojin-info.go.jp/ns/domain/biz/1#> "; 
@@ -328,7 +334,13 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 	}, "1000");
 } 
 
-//ボタンを押したときの処理
+//テキストボックスでエンターキーを押したときの処理
+function enter(){
+	if( window.event.keyCode == 13 ){ //13はエンターキーのコード
+		getMyWord();
+	}
+}
+
 function getMyWord() { // ボタンクリック時の動作 
 	let str = document.getElementById('txt1').value; //テキストボックスから取得 
 	document.getElementById('txt1').value = ""; //テキストボックスをクリア
