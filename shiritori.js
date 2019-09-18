@@ -45,7 +45,7 @@ function repeatMassage(){
 	let randomComment;
 	let myWord = "";
 	
-	const messageCount = 104 ; //メッセージの数はここに入れるだけ
+	const messageCount = 120 ; //メッセージの数はここに入れるだけ
 	comment.push("法人しりとりしよ&#x1f603;");
 	comment.push("はやく遊ぼうよ、し・り・と・り…&#x1f61c;");
 	comment.push("ねえ、法人しりとりやろうよ&#x1f609;");
@@ -161,7 +161,24 @@ function repeatMassage(){
 	comment.push("SPARQLとかよく分かんないよ…");
 	comment.push("たまには贅沢したいよね");
 	comment.push("わたしは法人しりとりをするために生まれてきたの");
+	comment.push("ちょっと食いすぎたかも…　腹いたなってきた…");
+	comment.push("０カロリーゼリーとかってほんとに太らんのやろか…&#x2753;");
+	comment.push("さあ、しりとり千本ノックの時間だよ&#x2757;&#x2757;　とことんまで付き合ってあ・げ・る&#x1f61c;");
+	comment.push("縄文時代の遺跡からもしりとりの痕跡が発見されているんだ");
+	comment.push("法人しりとりはスマホでもできるっす");
+	comment.push("高校の数学では微分と積分と尻分を習います");
 
+	comment.push("法人しりとりは食べ物ではありません。飲み物です");
+	comment.push("しりとりマスターへの道は巌しいぞよ。それでもお主は続けるのかい");
+	comment.push("ミツバチはしりとりダンスで蜜のありかを伝達しているんだ");
+	comment.push("狼の遠吠えも、実はしりとりで遊んでいるだけという研究結果もある");
+	comment.push("しりとりをテーマとした映画がもうすぐ公開される予定だよ");
+	comment.push("お腹がすいているときは法人しりとりをやるといいよ");
+	comment.push("法人しりとりにはカフェインの30倍の覚醒効果があるんだ");
+	comment.push("ポケモンよりシリモンだよね");
+	comment.push("しりとりでイノベーションの風を起こせ&#x2757;");
+	comment.push("法人しりとりを毎日続けると足が速くなるという研究結果もある");
+	
 	let repeat = setInterval(function(){
 		if(stopRepeat === 1){
 			clearInterval(repeat);
