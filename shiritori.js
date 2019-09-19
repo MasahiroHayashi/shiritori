@@ -45,7 +45,7 @@ function repeatMassage(){
 	let randomComment;
 	let myWord = "";
 	
-	const messageCount = 120 ; //メッセージの数はここに入れるだけ
+	const messageCount = 132 ; //メッセージの数はここに入れるだけ
 	comment.push("法人しりとりしよ&#x1f603;");
 	comment.push("はやく遊ぼうよ、し・り・と・り…&#x1f61c;");
 	comment.push("ねえ、法人しりとりやろうよ&#x1f609;");
@@ -159,7 +159,7 @@ function repeatMassage(){
 	
 	comment.push("法人インフォの中の人が頑張れば頑張るほどわたしのネタが勝手に増えるのよ");
 	comment.push("SPARQLとかよく分かんないよ…");
-	comment.push("たまには贅沢したいよね");
+	comment.push("たまには贅沢したいよね。贅沢しりとり");
 	comment.push("わたしは法人しりとりをするために生まれてきたの");
 	comment.push("ちょっと食いすぎたかも…　腹いたなってきた…");
 	comment.push("０カロリーゼリーとかってほんとに太らんのやろか…&#x2753;");
@@ -178,6 +178,20 @@ function repeatMassage(){
 	comment.push("ポケモンよりシリモンだよね");
 	comment.push("しりとりでイノベーションの風を起こせ&#x2757;");
 	comment.push("法人しりとりを毎日続けると足が速くなるという研究結果もある");
+	
+	comment.push("もうすぐ法人しりとりの全国大会です。しりとり猛者たちの熱い戦いが始まるよ&#x2757;");
+	comment.push("あーペヤング食いてぇ");
+	comment.push("わたしのしりとりが収録されたブルーレイが発売されるんだよ");
+	comment.push("ひろがれ！　法人しりとりの輪！");
+	comment.push("もう何もかもめんどくさくなっちゃった…");
+	comment.push("しりとりのオントロジー");
+	comment.push("「しりとり」と「餃子」にはいくつかの共通点があるんだ");
+	comment.push("冷やししりとり大盛りね");
+	comment.push("法人しりとりしないと損しますよ");
+	comment.push("２４時間耐久しりとり");
+	
+	comment.push("３０年前だったら私も立派なAIよね…");
+	comment.push("ねえ、AIってなに？　それ美味しいの？");	
 	
 	let repeat = setInterval(function(){
 		if(stopRepeat === 1){
