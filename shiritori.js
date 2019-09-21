@@ -64,7 +64,7 @@ function repeatMassage(){
 	comment.push("法人にはいろんな種類があるんだよ");
 	comment.push("<a href='https://hojin-info.go.jp/hojin/TopPage' target='_blank'><b>法人インフォ</b></a>のデータベースには<a href='https://imi.go.jp/goi/' target='_blank'><b>共通語彙基盤</b></a>が活用されているんだ");
 	comment.push("ねえ、<a href='https://imi.go.jp/goi/' target='_blank'><b>共通語彙基盤</b></a>って知ってる？法人インフォのデータベースに使われているんだって");
-	comment.push("Hou Jin Shirin Tori&#x2757; Yay&#x2757; Yay&#x2757;&#x2757;");
+	comment.push("Hou Jin Shiri Tori&#x2757; Yay&#x2757; Yay&#x2757;&#x2757;");
 	comment.push("ほーじんしりとりやろー&#x1f49b;");
 	comment.push("しりとりより面白いことなんてないよ&#x1f601;");
 	comment.push("わたしは天才しりとりっ娘&#x1f618;");
@@ -237,6 +237,14 @@ function getAIword(str) {
 		randomOffset = Math.floor( Math.random() * 300 ); 
 	}
 	
+	//初回に「ん」がつかない対策のため、初回のみlimitを3に
+	let limitcount = 1 ;
+	if(rirekiWords.length < 2 ){
+		limitcount = 3 ;
+	}else{
+		limitcount = 1 ;
+	}
+
 	var endpoint = 'https://hojin-info.go.jp/sparql02/ApiAllData09/query'; //Endpointをセット 
 	var method = "POST"; //メソッド（POST or GET） 
 	var query =  "PREFIX  hj: <http://hojin-info.go.jp/ns/domain/biz/1#> "; 
@@ -256,8 +264,9 @@ function getAIword(str) {
 	query += "FILTER(regex(str(?corporateKana), '^";
 	query += str ;
 	query += "' )) "; 
-	query += "}limit 1 "; //１に変更
-	query += "offset "; 
+	query += "}limit "; 
+	query += limitcount ; //初回のみ３
+	query += " offset "; 
 	query += randomOffset ;
 	sparqlQuery(query,endpoint,method) ; //スパークルクエリ送信 
 } 
@@ -306,15 +315,25 @@ function onSuccessQuery(text) { // 結果(JSON文字列)を配列に格納
 } 
 
 function makeWord(head, rows) { // 配列をテーブルにして出力 
-	resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(rows[0].corporateKana.value) + "</b><br>" ; //表示はひらがなで
+
+	//初回に「ん」がつかない対策
+	let cn = 0 ;
+	if(rirekiWords.length < 2 && rows[0].corporateKana.value.slice(-1) == "ン"){
+		cn = 1 ;
+		if(rirekiWords.length < 2 && rows[1].corporateKana.value.slice(-1) == "ン"){
+			cn = 2 ;
+		}
+	}
+
+	resultStr += "<span class='shiri'>Shirin</span>：<b>" + kanaToHira(rows[cn].corporateKana.value) + "</b><br>" ; //表示はひらがなで
 	document.getElementById("results").innerHTML = resultStr; 
 	scroll();
 	setTimeout(function () {
 		if(rirekiWords.length > 0){
 			for (var i=0; i<rirekiWords.length; i++) {
-				if(rirekiWords[i] == rows[0].corporateKana.value){
+				if(rirekiWords[i] == rows[cn].corporateKana.value){
 					startFlag = 1; 
-					resultStr += "<span class='shiri'>Shirin</span>：あ、<b>" + kanaToHira(rows[0].corporateKana.value) + "</b>はさっき言ったね。てへ、Shirinの負け。<br>" ;
+					resultStr += "<span class='shiri'>Shirin</span>：あ、<b>" + kanaToHira(rows[cn].corporateKana.value) + "</b>はさっき言ったね。てへ、Shirinの負け。<br>" ;
 					document.getElementById("results").innerHTML = resultStr; 
 					scroll();
 					endMassage();
@@ -322,15 +341,16 @@ function makeWord(head, rows) { // 配列をテーブルにして出力
 				}
 			}
 		}
-		rirekiWords.push(rows[0].corporateKana.value); //履歴に追加
-		resultStr += "<span class='shiri'>Shirin</span>：<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[0].s.value.slice(-13) + "' target='_blank'>" + rows[0].corporateName.value + "</a></b>は " + rows[0].pref.value + rows[0].city.value + "にある法人。法人番号は " + rows[0].s.value.slice(-13) + "<br>" ;
+		rirekiWords.push(rows[cn].corporateKana.value); //履歴に追加
+		resultStr += "<span class='shiri'>Shirin</span>：<b><a href='https://hojin-info.go.jp/hojin/ichiran?hojinBango=" + rows[cn].s.value.slice(-13) + "' target='_blank'>" + rows[cn].corporateName.value + "</a></b>は " + rows[cn].pref.value + rows[cn].city.value + "にある法人。法人番号は " + rows[cn].s.value.slice(-13) + "<br>" ;
 		document.getElementById("results").innerHTML = resultStr; 
 		scroll();
 		setTimeout(function () {
-			hitomoji = kanaToHira(rows[0].corporateKana.value.slice(-1)) ; //ケツの１文字切り出し
+			hitomoji = kanaToHira(rows[cn].corporateKana.value.slice(-1)) ; //ケツの１文字切り出し
 			if(hitomoji == "ー"){
-				hitomoji = kanaToHira(rows[0].corporateKana.value.substr(-2,1)) ; //「ー」の場合は２文字目
+				hitomoji = kanaToHira(rows[cn].corporateKana.value.substr(-2,1)) ; //「ー」の場合は２文字目
 			}
+			
 			if(hitomoji != "ん"){
 				if(hitomoji === "ぁ"){
 					hitomoji = "あ";
@@ -1098,7 +1118,7 @@ function kanaToHira(str) {
 //全角のひらがなカタカナ以外が含まれているか判定する関数
 function isZenkakuKana(str){
 	str = (str==null)?"":str;
-	if(str.match(/^[ぁ-んー]*$/)){
+	if(str.match(/^[ぁ-ゖー]*$/)){
 		return true;
 	}else if(str.match(/^[ァ-ヶー]*$/)){
 		return true;
